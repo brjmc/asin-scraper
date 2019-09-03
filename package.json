@@ -1,0 +1,16 @@
+{
+  "name": "asin-scraper",
+  "version": "1.0.0",
+  "main": "n/a",
+  "repository": "https://github.com/brjmc/asin-scraper.git",
+  "author": "brendan <brendan.mckay@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "install-deps": "cd client && yarn && cd ../server && yarn",
+    "start": "concurrently --kill-others \"cd client && yarn start\" \"cd server && yarn start\""
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2"
+  }
+}
